@@ -5,7 +5,7 @@ class Student(models.Model):
     age = models.IntegerField(verbose_name="Возраст")
     city = models.CharField(max_length=100, verbose_name="Город")
     email = models.EmailField(verbose_name="Email")
-    created_at = models.DateTimeField(auto_now_add=True, verbose_name="Дата создания")
+    created_at = models.DateTimeField( verbose_name="Дата создания")
 
     class Meta:
         verbose_name = "Студент"
